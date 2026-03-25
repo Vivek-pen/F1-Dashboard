@@ -14,6 +14,12 @@ RUN mvn clean package -DskipTests
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 
+# Load Environment Variables for Deployment
+ENV DB_URL=jdbc:postgresql://ep-wandering-hill-a1hljsdk-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+ENV DB_USERNAME=neondb_owner
+ENV DB_PASSWORD=npg_B3FKufWche1g
+ENV FRONTEND_URL=https://f1-dashboard-eight.vercel.app
+
 # Copy the built JAR file from the build stage
 COPY --from=build /app/target/*.jar app.jar
 
