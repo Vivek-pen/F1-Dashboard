@@ -3,7 +3,7 @@ import { Client } from '@stomp/stompjs';
 
 export const connectLiveTelemetry = (onMessageReceived) => {
   const client = new Client({
-    brokerURL: 'ws://localhost:9090/ws/live-race', // Your Spring Boot WS endpoint
+    brokerURL: import.meta.env.VITE_PUBLIC_WS_URL || 'ws://localhost:9090/ws/live-race', // Your Spring Boot WS endpoint
     reconnectDelay: 5000, // Auto-reconnect if the server drops
     heartbeatIncoming: 4000,
     heartbeatOutgoing: 4000,

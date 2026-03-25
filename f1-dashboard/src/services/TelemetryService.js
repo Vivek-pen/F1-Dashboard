@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Ensure your base URL matches your Spring Boot configuration
 const api = axios.create({
-  baseURL: 'http://localhost:8080/api', 
+  baseURL: import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api', 
 });
 
 export const TelemetryService = {

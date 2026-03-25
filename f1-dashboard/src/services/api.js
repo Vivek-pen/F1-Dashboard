@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:9090/api', // Keep your existing port
+  baseURL: import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api', // Keep your existing port
   timeout: 10000,
 });
 

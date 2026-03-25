@@ -164,7 +164,7 @@ export default function ReplayRace() {
   const [circuitInfo, setCircuitInfo] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:9090/api/replay/available-races')
+    fetch(`${import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api'}/replay/available-races`)
       .then(res => res.json())
       .then(data => {
         setAvailableRaces(data);
@@ -177,7 +177,7 @@ export default function ReplayRace() {
 
   useEffect(() => {
     if (selectedRace && selectedRace.circuitName) {
-      fetch(`http://localhost:9090/api/replay/circuit-info/${selectedRace.circuitName}`)
+      fetch(`${import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api'}/replay/circuit-info/${selectedRace.circuitName}`)
         .then(res => res.json())
         .then(data => setCircuitInfo(data))
         .catch(console.error);
@@ -242,7 +242,7 @@ export default function ReplayRace() {
     if (!isPlaying) return;
 
     const interval = setInterval(() => {
-      fetch('http://localhost:9090/api/replay/progress')
+      fetch(`${import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api'}/replay/progress`)
         .then(res => res.json())
         .then(data => {
           setProgress(data);
@@ -258,7 +258,7 @@ export default function ReplayRace() {
     setSelectedRace(race);
     setShowRaceSelector(false);
     
-    fetch(`http://localhost:9090/api/replay/select/${race.round}`, { method: 'POST' })
+    fetch(`${import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api'}/replay/select/${race.round}`, { method: 'POST' })
       .then(res => res.json())
       .then(() => {
         setIsPlaying(false);
@@ -269,14 +269,14 @@ export default function ReplayRace() {
 
   const handlePlayPause = () => {
     const action = isPlaying ? 'pause' : 'play';
-    fetch(`http://localhost:9090/api/replay/control/${action}`, { method: 'POST' })
+    fetch(`${import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api'}/replay/control/${action}`, { method: 'POST' })
       .then(res => res.json())
       .then(() => setIsPlaying(!isPlaying))
       .catch(console.error);
   };
 
   const handleReset = () => {
-    fetch('http://localhost:9090/api/replay/control/reset', { method: 'POST' })
+    fetch(`${import.meta.env.VITE_PUBLIC_BACKEND_URL || 'http://localhost:9090/api'}/replay/control/reset`, { method: 'POST' })
       .then(res => res.json())
       .then(() => {
         setIsPlaying(false);
