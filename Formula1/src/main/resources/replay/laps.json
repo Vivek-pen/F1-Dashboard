@@ -1,0 +1,22 @@
+[
+  {"driver_number": 1, "lap_number": 45, "lap_duration": "74.532", "date_start": "2024-05-26T14:29:00.000Z"},
+  {"driver_number": 16, "lap_number": 45, "lap_duration": "74.891", "date_start": "2024-05-26T14:29:01.000Z"},
+  {"driver_number": 63, "lap_number": 45, "lap_duration": "75.123", "date_start": "2024-05-26T14:29:02.000Z"},
+  {"driver_number": 4, "lap_number": 45, "lap_duration": "75.456", "date_start": "2024-05-26T14:29:03.000Z"},
+  {"driver_number": 55, "lap_number": 45, "lap_duration": "75.789", "date_start": "2024-05-26T14:29:04.000Z"},
+  {"driver_number": 44, "lap_number": 45, "lap_duration": "76.012", "date_start": "2024-05-26T14:29:05.000Z"},
+  {"driver_number": 81, "lap_number": 45, "lap_duration": "76.234", "date_start": "2024-05-26T14:29:06.000Z"},
+  {"driver_number": 14, "lap_number": 45, "lap_duration": "76.567", "date_start": "2024-05-26T14:29:07.000Z"},
+  {"driver_number": 11, "lap_number": 45, "lap_duration": "76.789", "date_start": "2024-05-26T14:29:08.000Z"},
+  {"driver_number": 18, "lap_number": 45, "lap_duration": "77.123", "date_start": "2024-05-26T14:29:09.000Z"},
+  {"driver_number": 10, "lap_number": 45, "lap_duration": "77.456", "date_start": "2024-05-26T14:29:10.000Z"},
+  {"driver_number": 31, "lap_number": 45, "lap_duration": "77.789", "date_start": "2024-05-26T14:29:11.000Z"},
+  {"driver_number": 23, "lap_number": 45, "lap_duration": "78.012", "date_start": "2024-05-26T14:29:12.000Z"},
+  {"driver_number": 27, "lap_number": 45, "lap_duration": "78.345", "date_start": "2024-05-26T14:29:13.000Z"},
+  {"driver_number": 20, "lap_number": 45, "lap_duration": "78.678", "date_start": "2024-05-26T14:29:14.000Z"},
+  {"driver_number": 22, "lap_number": 45, "lap_duration": "78.901", "date_start": "2024-05-26T14:29:15.000Z"},
+  {"driver_number": 3, "lap_number": 45, "lap_duration": "79.234", "date_start": "2024-05-26T14:29:16.000Z"},
+  {"driver_number": 2, "lap_number": 45, "lap_duration": "79.567", "date_start": "2024-05-26T14:29:17.000Z"},
+  {"driver_number": 24, "lap_number": 45, "lap_duration": "79.890", "date_start": "2024-05-26T14:29:18.000Z"},
+  {"driver_number": 77, "lap_number": 45, "lap_duration": "80.123", "date_start": "2024-05-26T14:29:19.000Z"}
+]

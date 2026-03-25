@@ -1,0 +1,63 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< com.f12026:Formula1 >-------------------------
+[INFO] Building Formula1 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Formula1 ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ Formula1 ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 45 source files with javac [debug parameters release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[28,34] cannot find symbol
+  symbol:   method fetchPositions(int)
+  location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[31,34] cannot find symbol
+  symbol:   method fetchLaps(int)
+  location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[34,34] cannot find symbol
+  symbol:   method fetchLocations(int)
+  location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[37,34] cannot find symbol
+  symbol:   method fetchStints(int)
+  location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[40,34] cannot find symbol
+  symbol:   method fetchPitStops(int)
+  location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[INFO] 5 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.848 s
+[INFO] Finished at: 2026-03-06T00:15:38+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project Formula1: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[28,34] cannot find symbol
+[ERROR]   symbol:   method fetchPositions(int)
+[ERROR]   location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[31,34] cannot find symbol
+[ERROR]   symbol:   method fetchLaps(int)
+[ERROR]   location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[34,34] cannot find symbol
+[ERROR]   symbol:   method fetchLocations(int)
+[ERROR]   location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[37,34] cannot find symbol
+[ERROR]   symbol:   method fetchStints(int)
+[ERROR]   location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] /C:/Users/VIVEK/OneDrive/Desktop/F1_2026/Formula1/src/main/java/com/f12026/Formula1/apiConfig/service/TelemetryScheduler.java:[40,34] cannot find symbol
+[ERROR]   symbol:   method fetchPitStops(int)
+[ERROR]   location: variable openF1Service of type com.f12026.Formula1.apiConfig.service.OpenF1Service
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* Our custom vibrant F1 theme variables */
+@theme {
+  --color-f1-dark: #09090b;
+  --color-f1-card: #18181b;
+  --color-f1-red: #ef4444;
+  --color-f1-red-glow: rgba(239, 68, 68, 0.5);
+}
+
+/* Base styles for the dark dashboard */
+body {
+  background-color: var(--color-f1-dark);
+  color: #f3f4f6; /* Tailwind's gray-100 */
+}
