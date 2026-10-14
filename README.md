@@ -48,7 +48,7 @@ Ensure the following tools are installed on your environment:
 3. The system defaults to the following credentials format:
    * URL: `jdbc:postgresql://localhost:5432/F1`
    * Username: `postgres`
-   * Password: `Welcome@1234$`
+   * Password: ``
 4. Modify the `Formula1/src/main/resources/application.properties` file if your local database credentials differ.
 
 ### 2. Backend Initialization
